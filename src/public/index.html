@@ -4,15 +4,33 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
+    <div>
+    <div class="flexbox">
+        <div class="chat-box">
+          <div class="chat-box-header">
+            <h3>Chateá con tu asistente</h3>
+          </div>
+          <div class="chat-box-body">
+            <div id="chat_messages">
+                <div class="message other-message">
+                    <p id="log"></p>
+                </div>
+                            
+            </div>
+          </div>
+           <div class="chat-box-footer">
+            <input id="chatBox" class="chat_input" type= "text" placeholder="Escribe tu mensaje aquí">
+         
+           </div>
+        </div>
+      </div>
+    </div>  
 
-    <h1> ASISTENTE VIRTUAL </h1>
-
-    <input id="chatBox" type= "text">
-    <br>
-    <p id="log"></p>
 
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="/socket.io/socket.io.js"></script>
